@@ -10,7 +10,7 @@ Usage:
       --volume HOST_BACKUP_DIRECTORY:/backup \
       alexanderfefelov/mydumper \
       mydumper \
-        --output=/backup \
+        --outputdir=/backup \
         --host=HOSTNAME \
         --user=USERNAME \
         --password=PASSWORD
