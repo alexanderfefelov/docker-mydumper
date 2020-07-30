@@ -3,7 +3,7 @@ FROM debian:stretch-slim
 ENV MYDUMPER_VERSION=0.9.5
 ENV MYDUMPER_REVISION=2
 
-ENV STUFF=mydumper_$VERSION-$MYDUMPER_REVISION.stretch_amd64.deb
+ENV STUFF=mydumper_$MYDUMPER_VERSION-$MYDUMPER_REVISION.stretch_amd64.deb
 ADD https://github.com/maxbube/mydumper/releases/download/v$MYDUMPER_VERSION/$STUFF /
 
 RUN apt-get -qq update \
