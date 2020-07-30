@@ -6,11 +6,6 @@ Usage:
 
     docker run --rm alexanderfefelov/mydumper mydumper --help
 
-    docker run --rm \
-      --volume HOST_BACKUP_DIRECTORY:/backup \
-      alexanderfefelov/mydumper \
-      mydumper \
-        --outputdir=/backup \
-        --host=HOSTNAME \
-        --user=USERNAME \
-        --password=PASSWORD
+or
+
+    docker run --rm alexanderfefelov/mydumper myloader --help

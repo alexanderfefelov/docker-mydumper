@@ -1,4 +1,4 @@
-FROM debian:stretch-slim
+FROM debian:10.4-slim
 
 ENV MYDUMPER_VERSION=0.9.5
 ENV MYDUMPER_REVISION=2
