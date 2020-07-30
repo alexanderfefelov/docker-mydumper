@@ -12,8 +12,8 @@ RUN apt-get -qq update \
        libglib2.0-0 \
        libssl1.1 \
   && dpkg --install /$STUFF \
-  && rm --force /$STUFF \
   && apt-get -qq clean \
-  && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/*
+  && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/* \
+  && rm --force /$STUFF
 
 CMD ["/bin/bash"]
